@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokebook</title>
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div>
+        <h1>Joke of the Day:</h1>
+        <h3 id="joke">
+            Loading Joke...
+        </h3>
+    </div>
+
+    <div>
+
+        <h2>
+            Categories:
+        </h2>
+
+        <ul id="categories_list">
+        </ul>
+
+    </div>
+
+
+    <div>
+
+        <h2>
+            Search for jokes by category:
+        </h2>
+
+        <input type="text" id="category_search" placeholder="Enter category name(either lameJoke or funnyJoke)">
+        <button id="search">Search</button>
+
+    </div>
+
+
+    <div>
+        <h2>
+            Jokes in chosen category:
+        </h2>
+        <ul id="joke_list">
+            Select a category!
+        </ul>
+    </div>
+
+
+    <div>
+        <h2>Submit a new joke: </h2>
+
+        <form id="form">
+
+            <input type="text" name="category_name" placeholder="Category" required>
+            <input type="text" name="setup" placeholder="Setup" required>
+            <input type="text" name="delivery" placeholder="Delivery" required>
+
+            <button type="submit">Add Joke</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
